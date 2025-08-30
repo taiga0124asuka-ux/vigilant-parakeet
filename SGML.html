@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGMLについて</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+<h1>1.SGMLとは？</h1>
+<p>2.HTMLやXMLとの関係は？</p>
+</section>
+<section>
+<h1>1.SGMLとは？</h1>
+<p>SGMLは、文書の論理的な構造を定義するための国際標準規格です。<br>
+簡単に言えば、「HTMLやXMLの親にあたる言語」です。<br>
+見た目のデザインではなく、「見出し」「段落」「リスト」といった文書の構造を厳密に定義することを目的としています。</p>
+<h2>
+SGMLの歴史    
+</h2>
+<p>
+SGMLのルーツは、IBM社で開発された**GML（Generalized Markup Language）**に遡ります。<br>
+・1960年代後半: IBMのチャールズ・ゴールドファーブ、エドワード・モス、レイモンド・ロリーの3人が、異なるフォーマットの文書を共通の形式で管理するためのシステムを考案しました。これがGMLです。<br>
+当時の問題: 当時の文書作成は、ワープロソフトや組版システムごとに異なる形式で保存されており、フォーマットの変換や再利用が非常に困難でした。例えば、文書の「見出し」を定義するのに、あるシステムではH1を使い、別のシステムでは\Headingを使うといった具合です。<br>
+GMLの解決策: GMLは、文書の内容（コンテンツ）と見た目（レイアウト）を分離するという画期的なアイデアを導入しました。「これは見出しです」「これは段落です」というように、文書の構造だけを定義し、見た目の装飾は別の仕組みに任せるという考え方です。<br>
+</p>
+・1986年: GMLの考え方を基に、様々な文書に応用できるよう汎用性を高めた「SGML（Standard Generalized Markup Language）」が、**ISO（国際標準化機構）の国際標準規格（ISO 8879）**として正式に制定されました。<br>
+この時点で、SGMLは「文書を構造的に記述するための言語」として、非常に厳密かつ強力な存在となりました。<br>
+<h2>広がりと派生</h2>
+<p>
+SGMLは、技術文書、政府機関の公式文書、航空宇宙産業など、厳密な構造と長期的な保存が求められる分野で活用され始めました。しかし、その厳密さゆえに、以下のような問題も抱えていました。<br>
+複雑さ: SGMLは非常に多機能で、DTD（文書型定義）の記述も複雑でした。専門家でなければ扱うのが難しく、一般に普及するにはハードルが高すぎました。<br>
+厳格な解析: SGMLの仕様が複雑だったため、SGML文書を解析するソフトウェアの開発が困難でした。<br>
+この複雑さを解決するために、SGMLから2つの重要な言語が派生しました。<br>
+</p>
+<h2>SGMLの主な特徴</h2>
+<p>メタ言語: SGML自体がマークアップ言語ではなく、**新しいマークアップ言語を作成するための「文法」や「ルール」です。<br>
+DTD（文書型定義）: SGMLの最大の特徴は、DTD（Document Type Definition）という仕組みを使って、その文書で使えるタグや属性を厳密にルール化できる点です。これにより、一貫性のある文書を作成できます。<br>
+複雑さと厳密性: 厳密な構造定義ができる反面、非常に複雑で習得が難しく、専門的な知識が必要とされました。</p>
+</section>
+<section>
+<h1>2.HTMLやXMLとの関係は？</h1>
+<p>
+・HTML: SGMLのルールに基づいて作られた特定のマークアップ言語です。ウェブページの作成に特化しており、SGMLの複雑さを減らして使いやすくしたものです。<br>
+・XML: SGMLの複雑さをさらに解消し、インターネット上でのデータ交換を目的として開発された言語です。SGMLの「単純化・厳格化」版と言えます。<br>
+</p>
+</section>
+</body>
+</html>
